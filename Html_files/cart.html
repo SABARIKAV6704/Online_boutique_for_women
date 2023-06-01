@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page with Navigation Bar and Form</title>
+  <style>
+    /* Basic styling for the website */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .navbar {
+      background-color: #333;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      width: 100%;
+    }
+
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 10px;
+    }
+
+    .navbar .back-button {
+      font-weight: bold;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin-top: 50px;
+      width: 100%;
+    }
+
+    .product-image {
+      width: 40%;
+    }
+
+    .product-image img {
+      width: 70%;
+    }
+
+    .form-container {
+      width: 60%;
+      margin-left: 50px;
+    }
+
+    .form-container form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-container label {
+      margin-bottom: 10px;
+    }
+
+    .form-container .form-field {
+      display: flex;
+    }
+
+    .form-container .form-field label {
+      width: 30%;
+      margin-right: 10px;
+    }
+
+    .form-container .form-field input {
+      width: 70%;
+      padding: 10px;
+      box-sizing: border-box;
+      border: none;
+      border-bottom: 2px solid black;
+    }
+
+    .buy-now-button {
+      text-align: center;
+      background-color: green;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 70px;
+    }
+
+    .footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      margin-top: 20px;
+      width: 100%;
+    }
+
+    /* Center text */
+    .center {
+      text-align: center;
+    }
+
+    /* Center image */
+    .center-image {
+      display: block;
+      margin: 2rem auto;
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Form */
+    input[type="text"],
+    input[type="email"],
+    select {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      border: none;
+      border-bottom: 2px solid black;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="navbar">
+    <a href="#" class="back-button">Back</a>
+    <div>
+      <a href="./Homepage.html#home">Home</a>
+      <a href="./Homepage.html#services">Services</a>
+      <a  href="./Homepage.html#contact">Contact</a>
+    </div>
+  </div>
+
+  <div class="container">
+
+
+    <div class="form-container">
+      <form name="f1" onsubmit="return fun()" action="http://localhost:3000/login" method="POST">
+        <div class="form-field">
+          <label for="fname">Name:</label>
+          <input type="text" id="fname" name="name" required>
+        </div>
+
+        <div class="form-field">
+          <label for="area">Area:</label>
+          <input type="text" id="area" name="area" required>
+        </div>
+
+        <div class="form-field">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-field">
+          <label for="city">City:</label>
+          <input type="text" id="city" name="city" required>
+        </div>
+
+        <div class="form-field">
+          <label for="address">Address:</label>
+          <input type="text" id="address" name="address" required>
+        </div>
+
+        <div class="form-field">
+          <label for="state">State:</label>
+          <input type="text" id="state" name="state" required>
+        </div>
+
+        <div class="form-field">
+          <label for="country">Country:</label>
+          <input type="text" id="country" name="country" required>
+        </div>
+
+        <div class="form-field">
+          <label for="pincode">Pincode:</label>
+          <input type="text" id="pincode" name="pincode" required>
+        </div>
+
+        <div class="form-field">
+          <label for="mobileno">Mobile:</label>
+          <input type="text" id="mobileno" name="mobile" required>
+        </div>
+
+        <div class="form-field">
+          <label for="quantity">Quantity:</label>
+          <select id="quantity" name="quantity" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <button type="submit" class="buy-now-button">Buy Now</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function fun() {
+      alert("Order placed successfully....");
+      return true;
+    }
+  </script>
+  
+  <div class="footer">
+    &copy; 2023 My Website. All rights reserved.
+  </div>
+</body>
+</html>

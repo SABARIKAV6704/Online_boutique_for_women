@@ -1,0 +1,40 @@
+const mysql = require('mysql');
+
+// Create a MySQL connection
+var connection = mysql.createConnection({
+    host: "127.0.0.1",
+    user: "root",   
+    password: "mysql1234",
+    database:"booking"
+  });
+  
+
+// Connect to the MySQL server
+connection.connect(function(err) {
+  if (err) {
+    console.error('Error connecting to MySQL: ' + err.stack);
+    return;
+  }
+  console.log('Connected to MySQL as id ' + connection.threadId);
+});
+
+// Handle the "Add to Cart" button click event
+document.querySelector('.btn-primary').addEventListener('click', function() {
+  const quantity = document.querySelector('#quantity').value;
+
+  // Prepare the SQL query
+  const query = "INSERT INTO cart (product_id, quantity) VALUES (?, ?)";
+  const values = [1, quantity]; // Replace 1 with the actual product ID
+
+  // Execute the SQL query
+  connection.query(query, values, function(err, result) {
+    if (err) {
+      console.error('Error executing SQL query: ' + err.stack);
+      return;
+    }
+    console.log('Added to cart with ID ' + result.insertId);
+  });
+});
+
+// Close the MySQL connection when finished
+// connection.end();

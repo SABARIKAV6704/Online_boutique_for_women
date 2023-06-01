@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boutique</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;1,200&family=Quicksand&display=swap');
+
+
+#navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: .5rem 5rem;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
+    background: black;
+}
+.navbar .navbar-brand{
+    font-size: 25px;
+    font-weight: 800;
+    color: crimson !important;
+}
+#navbarSupportedContent a{
+    color: white;
+    border-bottom: 2px solid transparent;
+    font-weight: 500;
+}
+#navbarSupportedContent a:hover{
+    border-bottom: 1.5px solid crimson;
+}
+#navbarSupportedContent a .get{
+    border-radius: 20px;
+    color: crimson;
+    font-size: 15px;
+    border-color: crimson;
+    font-weight: 700;
+}
+section{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/**home*/
+#home{
+    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.4)),url(
+home.jpeg.jpeg);
+    background-size: cover;
+    background-position: center;
+flex-direction: column;
+}
+#home h1{
+    font-size: 100px;
+    color:white;
+    letter-spacing: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0px 1px 0px #ccc,
+                 0px 2px 0px #ccc,
+                 0px 3px 0px #ccc,
+                 0px 4px 0px #ccc,
+                 0px 5px 0px #ccc,
+                 0px 6px 0px #ccc;
+}
+#home p{
+    font-weight: bolder;
+    color: aliceblue;
+    font-size: 18px;
+}
+#home .input-group{
+    width: 40%;
+    height: 45px;
+}
+#home .get{
+    background: crimson !important;
+    color: white !important;
+    box-shadow: 2px 4px 5px rgba(0,0,0,.3);
+}
+/*about*/
+#about h1{
+    font-weight: 800;
+
+}
+#about p{
+    font-weight: bolder;
+}
+/*services*/
+#services{
+    background: #e5e5e5;
+}
+#services h1{
+       font-size: 50px;
+       letter-spacing: 1.5px;
+       font-weight: 700;
+
+}
+#services img{
+    width: 200px;
+    height: 200px;
+}
+#services h5{
+    font-weight: 700;
+}
+#services p{
+    font-weight: 700;
+}
+.card{
+    width: 200px;
+    border: none !important;
+    box-shadow:  15px 20px 20px rgba(0,0,0,.3),
+                 inset 4px 4px 10px white;
+    border-radius: 20px !important;
+    overflow: hidden;
+    align-items: center;
+    margin: 20px 60px ;
+}
+
+#services .get{
+    background: crimson !important;
+    color: white !important;
+    box-shadow: 2px 4px 5px rgba(0,0,0,.3);
+}
+#services .card:hover{
+    box-shadow:  inset 5px 5px 10px rgba(0,0,0,.3),
+                 inset -4px -4px -10px white;
+}
+
+#contact img{
+  width:400px;
+  height: 400px;
+}
+</style>
+<body>
+<!--navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">dressy.com</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+data-bs-target="#navbarSupportedContent"
+       aria-expanded="false" >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link active"  href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active"  href="#about">About Us</a></li>
+        <li class="nav-item">
+            <a class="nav-link active"  href="#services">Services</a></li>
+            
+            <li class="nav-item">
+                <a class="nav-link active"  href="#contact">Contact</a>
+        </li>
+        </ul>
+        <a href="./signup.html" class="btn get" id="demo">Signup</a>
+        <a href="./login.html" class="btn get" id="demo">Login</a>
+
+        </div>
+    </div>
+  </nav>
+
+  <!--home-->
+  <section id="home">
+    <h1 class="text-center">Boutique</h1>
+    <p>A place for women, splendid boutique selling exclusive unstitched
+salwars, unique sarees, very own designed blouses!!!</p>
+    <div class="input-group m-4">
+        <input type="text" class="form-control" placeholder="your email
+address"><br>
+        <button class="btn get">Get Started</button>
+    </div>
+  </section>
+
+  <!--about section-->
+  <section id="about">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-12">
+                 <img src="./about.jpeg" class="img-fluid" style="padding:0px 0px 0px 0px ; height: 150%;width:500%;">
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+            <h1><b>Learn more about US</b></h1>
+            <p>DRESSY offers the fashion conscious Indian woman, trends
+straight off the runway at prices they just cannot pass, and more
+importantly, stands to spread a feeling of happiness in all its customers!
+We aims to cater the best and provide the best price which doesnot pinch
+your pockets. That's why we proudly say DRESSY is by YOU and for YOU.
+
+                Shopping is` one such activity in which each and everyone
+like to involve themselves to find themselves the best in the market. The
+customers are like the family members and we want them to be actively be
+part and provide us the suggestion which they required. Innovation is
+something we always believe and we always try to give something new to our
+customer's which is innovative and creative.
+
+                DRESSY is customer centric and always will be aiming to
+provide best possible services to our customers with more convenient way.</p
+>
+            </div>
+        </div>
+    </div>
+  </section>
+  <!--services-->
+  <section id="services">
+    <div class="container m-5">
+        <h1 class="text-center my-5">Our Services</h1>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="card">
+                    <img src="https://www.nishalika.com/wp-content/uploads/2021/08/Big-Border-Peshwai-navy-blue-saree1jpg.jpg" class="card-img-top">
+                    <div class="card-body text-center">
+                      <h5 class="card-title"><b>Sarees</b></h5>
+                      <p class="card-text">refined, exquisite, versatile..</
+p>
+                      <a href="saree.html" class="btn get">Explore!!!</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="card">
+                    <img src="https://cdn.shopify.com/s/files/1/0956/9624/products/Banarasi_salwar_suit-1-13_6835011d-9bc2-4e50-a307-46e557dc9faf_600x.jpg?v=1493636722" class="card-img-top">
+                    <div class="card-body text-center">
+                      <h5 class="card-title"><b>Salwars</b></h5>
+                      <p class="card-text">Eligent, bright, good looking..</
+p>
+                      <a href="./saree.html#salwar" class="btn get">
+Explore!!!</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="card">
+                    <img src="https://image.made-in-china.com/43f34j00yiWoclJspjqV/Velvet-Night-Suits-Nighty-Designs-Women-Sleep-Wear-Set.jpg" class="card-img-top">
+                    <div class="card-body text-center">
+                      <h5 class="card-title"><b>Night Wear</b></h5>
+                      <p class="card-text">Classy, cool, comfort, perfect..
+</p>
+                      <a href="./saree.html#night" class="btn get">
+Explore!!!</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="card">
+                    <img src="https://www.shahifits.in/wp-content/uploads/2021/06/Stylishta50041-e1624022612940.jpg" class="card-img-top">
+                    <div class="card-body text-center">
+                      <h5 class="card-title"><b>Kurtas</b></h5>
+                      <p class="card-text">Simple, Professional, appealing..
+</p>
+                      <a href="./saree.html#kurta" class="btn get">
+Explore!!!</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="card">
+                    <img src="https://rukminim1.flixcart.com/image/832/832/kfmv9u80/dress/a/h/p/xxl-ds-11-n-d-creation-original-imafwf8waxpq3sce.jpeg?q=70" class="card-img-top">
+                    <div class="card-body text-center">
+                      <h5 class="card-title"><b>Westerns</b></h5>
+                      <p class="card-text">Smart, Cool, Stylyy, fashion..</p
+>
+                      <a href="./saree.html#west" class="btn get">
+Explore!!!</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="card">
+                    <img src="https://ik.imagekit.io/wb2spwtue/kreeva/tr:h-430,w-315,q-80,cm-pad_resize/media/catalog/product/g/o/gown_tf-175-_1.jpg" class="card-img-top">
+                    <div class="card-body text-center">
+                      <h5 class="card-title"><b>Party Wear</b></h5>
+                      <p class="card-text">Gorgeous, Princess, Charming..</p
+>
+                      <a href="./saree.html#party" class="btn get">
+Explore!!!</a>
+                    </div>
+                  </div>
+            </div>
+           <!-- <div class="col-lg-4 col-md-4 col-12">
+                <div class="card">
+                    <img src="./na.jpeg" class="card-img-top">
+                    <div class="card-body text-center">
+                      <h5 class="card-title"><b>New Arrivals</b></h5>
+                      <p class="card-text">Delightful, Attractive,
+lovely</p>
+                      <a href="./new.html" class="btn get">Explore!!!</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="card">
+                    <img src="./kids.jpeg" class="card-img-top">
+                    <div class="card-body text-center">
+                      <h5 class="card-title"><b>Kids</b></h5>
+                      <p class="card-text">Cute, Charming, Adorable</p>
+                      <a href="./kids.html" class="btn get">Explore!!!</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="card">
+                    <img src="./acc.jpeg" class="card-img-top">
+                    <div class="card-body text-center">
+                      <h5 class="card-title"><b>Accessories</b></h5>
+                      <p class="card-text">Watches, gifts, bags, Jewels,
+Dupattas..</p>
+                      <a href="./access" class="btn get">Explore!!!</a>
+                    </div>
+                  </div>
+            </div>-->
+        </div>
+    </div>
+  </section>
+  
+            <!--contact-->
+            <section id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <img src="https://cdn.shrm.org/image/upload/c_crop,h_768,w_1366,x_0,y_0/c_fit,f_auto,q_auto,w_767/v1/People%20Managers/Honest_Feedback_photo_fcxcie?databtoa=eyIxNng5Ijp7IngiOjAsInkiOjAsIngyIjoxMzY2LCJ5MiI6NzY4LCJ3IjoxMzY2LCJoIjo3Njh9fQ%3D%3D" width="300" height="300">
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                             <h1>Ping US</h1>
+                             <form name="val" onsubmit="valid()">
+                                <input type="text" class="form-control" name="urname" pattern="[a-zA-Z]{4,15}" placeholder="Your name"><br>
+                                <input type="email" class="form-control"name="mail" pattern="[a-zA-Z0-9^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$]" placeholder="Your email"><br>
+                                <textarea class="form-control" pattern="[a-zA-Z0-9^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$]" placeholder="Your thoughts"></textarea><br>
+                                <input type="number" class="form-control" name="num" pattern="[0-9]{10}" placeholder="your mobile number"><br>
+                                <button class="btn-get">Send Us</button>
+                             </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+</body>
+</html>
+<script>
+</script>
+

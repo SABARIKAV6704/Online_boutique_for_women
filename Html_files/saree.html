@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boutique</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+    /*@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,200&family=Quicksand&display=swap');*/
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;1,200&family=Quicksand&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+#navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: .5rem 5rem;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
+    background: black;
+}
+.navbar .navbar-brand{
+    font-size: 25px;
+    font-weight: 800;
+    color: crimson !important;
+}
+#navbarSupportedContent a{
+    color: white;
+    border-bottom: 2px solid transparent;
+    font-weight: 500;
+}
+#navbarSupportedContent a:hover{
+    border-bottom: 1.5px solid crimson;
+}
+#navbarSupportedContent button{
+    border-radius: 20px;
+    color: crimson;
+    font-size: 15px;
+    border-color: crimson;
+    font-weight: 700;
+}
+section{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e5e5;
+}
+#sarre img{
+    width: 200px;
+    height: 200px;
+}
+#sarre h5{
+    font-weight: 700;
+}
+#sarre p{
+    font-weight: 700;
+}
+.card{
+    width: 200px;
+    border: none !important;
+    box-shadow:  15px 20px 20px rgba(0,0,0,.3),
+                 inset 4px 4px 10px white;
+    border-radius: 20px !important;
+    overflow: hidden;
+    align-items: center;
+    margin: 20px 60px ;
+}
+#sarre .get{
+    background: crimson !important;
+    color: white !important;
+    box-shadow: 2px 4px 5px rgba(0,0,0,.3);
+}
+/**salwar styles**/
+#salwar img{
+    width: 200px;
+    height: 200px;
+}
+#salwar h5{
+    font-weight: 700;
+}
+#salwar p{
+    font-weight: 700;
+}
+.card{
+    width: 200px;
+    border: none !important;
+    box-shadow:  15px 20px 20px rgba(0,0,0,.3),
+                 inset 4px 4px 10px white;
+    border-radius: 20px !important;
+    overflow: hidden;
+    align-items: center;
+    margin: 20px 60px ;
+}
+#salwar .get{
+    background: crimson !important;
+    color: white !important;
+    box-shadow: 2px 4px 5px rgba(0,0,0,.3);
+    justify-content: center;
+}
+/** night wears     **/
+#night img{
+    width: 200px;
+    height: 200px;
+}
+#night h5{
+    font-weight: 700;
+}
+#night p{
+    font-weight: 700;
+}
+.card{
+    width: 200px;
+    border: none !important;
+    box-shadow:  15px 20px 20px rgba(0,0,0,.3),
+                 inset 4px 4px 10px white;
+    border-radius: 20px !important;
+    overflow: hidden;
+    align-items: center;
+    margin: 20px 60px ;
+}
+#night .get{
+    background: crimson !important;
+    color: white !important;
+    box-shadow: 2px 4px 5px rgba(0,0,0,.3);
+    justify-content: center;
+}
+/**   kurts    **/
+#kurta img{
+    width: 200px;
+    height: 200px;
+}
+#kurta h5{
+    font-weight: 700;
+}
+#kurta p{
+    font-weight: 700;
+}
+.card{
+    width: 200px;
+    border: none !important;
+    box-shadow:  15px 20px 20px rgba(0,0,0,.3),
+                 inset 4px 4px 10px white;
+    border-radius: 20px !important;
+    overflow: hidden;
+    align-items: center;
+    margin: 20px 60px ;
+}
+#kurta .get{
+    background: crimson !important;
+    color: white !important;
+    box-shadow: 2px 4px 5px rgba(0,0,0,.3);
+    justify-content: center;
+}
+/**westerns    **/
+#west img{
+    width: 200px;
+    height: 200px;
+}
+#west h5{
+    font-weight: 700;
+}
+#west p{
+    font-weight: 700;
+}
+.card{
+    width: 200px;
+    border: none !important;
+    box-shadow:  15px 20px 20px rgba(0,0,0,.3),
+                 inset 4px 4px 10px white;
+    border-radius: 20px !important;
+    overflow: hidden;
+    align-items: center;
+    margin: 20px 60px ;
+}
+#west .get{
+    background: crimson !important;
+    color: white !important;
+    box-shadow: 2px 4px 5px rgba(0,0,0,.3);
+    justify-content: center;
+}
+/**party wear **/
+#party img{
+    width: 200px;
+    height: 200px;
+}
+#party h5{
+    font-weight: 700;
+}
+#party p{
+    font-weight: 700;
+}
+.card{
+    width: 200px;
+    border: none !important;
+    box-shadow:  15px 20px 20px rgba(0,0,0,.3),
+                 inset 4px 4px 10px white;
+    border-radius: 20px !important;
+    overflow: hidden;
+    align-items: center;
+    margin: 20px 60px ;
+}
+#party .get{
+    background: crimson !important;
+    color: white !important;
+    box-shadow: 2px 4px 5px rgba(0,0,0,.3);
+    justify-content: center;
+}
+</style>
+<body> 
+<!--navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">dressy.com</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+       aria-expanded="false" >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto"> 
+          <li class="nav-item">
+            <a class="nav-link active"  href="./Homepage.html#home">Home</a></li>
+        <li class="nav-item">
+            <a class="nav-link active"  href="./Homepage.html#services">Services</a></li>
+            <li class="nav-item">
+                <a class="nav-link active"  href="./Homepage.html#contact">Contact</a></li>
+        <li class="nav-item">
+            <a class="nav-link active"  href="#sarre">Sarees</a></li>
+          <li class="nav-item">
+            <a class="nav-link active"  href="#salwar">Salwars</a></li>
+          <li class="nav-item">
+            <a class="nav-link active"  href="#night">Lounge wears</a></li>
+          <li class="nav-item">
+            <a class="nav-link active"  href="#kurta">Kurtis</a></li>
+          <li class="nav-item">
+            <a class="nav-link active"  href="#west">Westerns</a></li>
+          <li class="nav-item">
+            <a class="nav-link active"  href="#party">Party Wear</a></li>
+        </ul>
+        <button class="btn p-2 my-lg-0 my-2">Signin</button>
+        </div>
+    </div>
+  </nav> 
+    <div class="container-fluid">
+        <h1 class="text-center my-5" style="font-size: 50px;">Here We let you to explore our arrival from sarees!!!</h1>
+        <p class="text-center my-5" style="font-size: 40px; color: crimson;">Fresh as flowers,new dresses everyday...</p>
+    </div>
+    <!--sarre section-->
+   <section id="sarre">
+    <div class="container m-5">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="card">
+                    <img src="./s1.webp" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title text-center my-5">Moonga Saree</h5>
+                      <p class="card-text text-center">CODE:SAS1R<br>Rs.12500</p>
+                      <a href="booking.html" class="btn get ">Book now!!</a><br><br>
+                      <a href="cart.html" class="btn get ">Add to Bag</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="card">
+                    <img src="./s2.webp" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title text-center my-5">Chanderis</h5>
+                      <p class="card-text text-center">CODE:SAS34<br>Rs.6578</p>
+                      <a href="booking.html" class="btn get">Book now!!</a><br><br>
+                      <a href="cart.html" class="btn get ">Add to Bag</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="card">
+                    <img src="./s3.webp" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title text-center my-5">Kalamkaris</h5>
+                      <p class="card-text text-center my-5">CODE:SA45G<br>Rs.7500</p>
+                      <a href="booking.html" class="btn get">Book now!!</a><br><br>
+                      <a href="cart.html" class="btn get ">Add to Bag</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="card">
+                    <img src="./s4.webp" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title text-center my-5">Printed Saree</h5>
+                      <p class="card-text text-center my-5">CODE:SA61D<br>Rs.5080</p>
+                      <a href="booking.html" class="btn get">Book now!!</a><br><br>
+                      <a href="cart.html" class="btn get ">Add to Bag</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="card">
+                    <img src="./s5.webp" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title text-center my-5">Tussar saree</h5>
+                      <p class="card-text text-center my-5">CODE:SADF5<br>Rs.8900</p>
+                      <a href="booking.html" class="btn get">Book now!!</a><br><br>
+                      <a href="cart.html" class="btn get ">Add to Bag</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="card">
+                    <img src="./s6.webp" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title text-center my-5">Peacock Zari</h5>
+                      <p class="card-text text-center my-5">CODE:SANM3<br>Rs.9999</p>
+                      <a href="booking.html" class="btn get">Book now!!</a><br><br>
+                      <a href="cart.html" class="btn get ">Add to Bag</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="card">
+                    <img src="./s7.webp" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title text-center my-5">Maslin Saree</h5>
+                      <p class="card-text text-center my-5">SA09K<br>Rs.5000</p>
+                      <a href="./booking.html" class="btn get">Book now!!</a><br><br>
+                      <a href="cart.html" class="btn get ">Add to Bag</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="card">
+                    <img src="./s8.webp" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title text-center my-5">Cotton Saree</h5>
+                      <p class="card-text text-center my-5">CODE:SAX4C<br>Rs.4899</p>
+                      <a href="./booking.html" class="btn get">Book now!!</a><br><br>
+                      <a href="cart.html" class="btn get ">Add to Bag</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="card">
+                    <img src="./s9.webp" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title text-center my-5">Kanchi Silk</h5>
+                      <p class="card-text text-center my-5">CODE:SA60M<br>Rs.10499</p>
+                      <a href="./booking.html" class="btn get">Book now!!</a><br><br>
+                      <a href="cart.html" class="btn get ">Add to Bag</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+   </section>
+   <div class="container-fluid">
+    <h1 class="text-center my-5" style="font-size: 50px;">Here We let you to explore our arrival from Salwars!!!</h1>
+    <p class="text-center my-5" style="font-size: 40px; color: crimson;">Fresh as flowers,new dresses everyday...</p>
+</div>
+   <!--salwar section-->
+   <section id="salwar">
+    <div class="container m-5">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="card">
+              <img src="./sa1.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title text-center my-5">Embroidary Salwar Green</h5>
+                <p class="card-text text-center">CODE:SAL1R<br>Rs.2500</p>
+                <a href="./booking.html" class="btn get ">Book now!!</a><br><br>
+                <a href="cart.html" class="btn get ">Add to Bag</a>
+              </div>
+            </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-12">
+        <div class="card">
+            <img src="./sa2.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title text-center my-5">Silk Cotton Salwar</h5>
+              <p class="card-text text-center">CODE:SAL2R<br>Rs.1200</p>
+              <a href="./booking.html" class="btn get ">Book now!!</a><br><br>
+              <a href="cart.html" class="btn get ">Add to Bag</a>
+            </div>
+          </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-12">
+      <div class="card">
+          <img src="./sa3.jpeg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-center my-5">Red Cotton Salwar</h5>
+            <p class="card-text text-center">CODE:SAL3R<br>Rs.1500</p>
+            <a href="./booking.html" class="btn get ">Book now!!</a><br><br>
+            <a href="cart.html" class="btn get ">Add to Bag</a>
+          </div>
+        </div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-12">
+    <div class="card">
+        <img src="./sa4.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title text-center my-5">Aari worked Salwar</h5>
+          <p class="card-text text-center">CODE:SAL4R<br>Rs.3400</p>
+          <a href="./booking.html" class="btn get ">Book now!!</a><br><br>
+          <a href="cart.html" class="btn get ">Add to Bag</a>
+        </div>
+      </div>
+</div>
+<div class="col-lg-4 col-md-4 col-12">
+  <div class="card">
+      <img src="./sa5.jpg" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title text-center my-5">Pink Embroidary Salwar</h5>
+        <p class="card-text text-center">CODE:SAL5R<br>Rs.1700</p>
+        <a href="./booking.html" class="btn get ">Book now!!</a><br><br>
+        <a href="cart.html" class="btn get ">Add to Bag</a>
+      </div>
+    </div>
+</div>
+<div class="col-lg-4 col-md-4 col-12">
+  <div class="card">
+      <img src="./sa6.webp" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title text-center my-5">Punjabi style Red salwar</h5>
+        <p class="card-text text-center">CODE:SAL6R<br>Rs3100</p>
+        <a href="./booking.html" class="btn get ">Book now!!</a><br><br>
+        <a href="cart.html" class="btn get ">Add to Bag</a>
+      </div>
+    </div>
+</div>
+<div class="col-lg-4 col-md-4 col-12">
+  <div class="card">
+      <img src="./sa7.webp" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title text-center my-5">Hand Embroidary Pink Salwar</h5>
+        <p class="card-text text-center">CODE:SAL7R<br>Rs.4500</p>
+        <a href="./booking.html" class="btn get ">Book now!!</a><br><br>
+        <a href="cart.html" class="btn get ">Add to Bag</a>
+      </div>
+    </div>
+</div>
+<div class="col-lg-4 col-md-4 col-12">
+  <div class="card">
+      <img src="./sa8.webp" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title text-center my-5">Trendy Black Salwar</h5>
+        <p class="card-text text-center">CODE:SAL8R<br>Rs.4500</p>
+        <a href="./booking.html" class="btn get ">Book now!!</a><br><br>
+        <a href="cart.html" class="btn get ">Add to Bag</a>
+      </div>
+    </div>
+</div>
+<div class="col-lg-4 col-md-4 col-12">
+  <div class="card">
+      <img src="./sa9.jpg" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title text-center my-5">Multi-color Salwar</h5>
+        <p class="card-text text-center">CODE:SAL9R<br>Rs.2500</p>
+        <a href="./booking.html" class="btn get ">Book now!!</a><br><br>
+        <a href="cart.html" class="btn get ">Add to Bag</a>
+      </div>
+    </div>
+</div>
+    </div></div>
+   </section>
+   <div class="container-fluid">
+    <h1 class="text-center my-5" style="font-size: 50px;">Here We let you to explore our arrival from Night wears!!!</h1>
+    <p class="text-center my-5" style="font-size: 40px; color: crimson;">Fresh as flowers,new dresses everyday...</p>
+</div>
+<!--night wears-->
+  <section id="night">
+    <div class="container m-5">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="card">
+              <img src="./n1.webp" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title text-center my-5">Printed Red pants</h5>
+                <p class="card-text text-center">CODE:NIG0R<br>Rs.500</p>
+                <a href="./booking.html" class="btn get ">Book now!!</a><br><br>
+                <a href="cart.html" class="btn get ">Add to Bag</a>
+              </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="card">
+              <img src="./n2.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title text-center my-5">PJ set</h5>
+                <p class="card-text text-center">CODE:NIG1R<br>Rs.700</p>
+                <a href="./booking.html" class="btn get ">Book now!!</a><br><br>
+                <a href="cart.html" class="btn get ">Add to Bag</a>
+              </div>
+            </div>
+        </div>
+      
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="card">
+              <img src="./n3.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title text-center my-5">Night shirts</h5>
+                <p class="card-text text-center">CODE:NIG2R<br>Rs.750</p>
+                <a href="./booking.html" class="btn get ">Book now!!</a><br><br>
+                <a href="cart.html" class="btn get ">Add to Bag</a>
+              </div>
+            </div>
+        </div>
+      <div class="col-lg-4 col-md-4 col-12">
+        <div class="card">
+            <img src="./n4.webp" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title text-center my-5">Turtle Neck Shirts</h5>
+              <p class="card-text text-center">CODE:NIG3R<br>Rs.650</p>
+              <a href="./booking.html" class="btn get ">Book now!!</a><br><br>
+              <a href="cart.html" class="btn get ">Add to Bag</a>
+            </div>
+          </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-12">
+        <div class="card">
+            <img src="./n5.webp" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title text-center my-5">Jump Suit</h5>
+              <p class="card-text text-center">CODE:NIG4R<br>Rs.800</p>
+              <a href="./booking.html" class="btn get ">Book now!!</a><br><br>
+              <a href="cart.html" class="btn get ">Add to Bag</a>
+            </div>
+          </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-12">
+        <div class="card">
+            <img src="./n6.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title text-center my-5">Printed T-shirt</h5>
+              <p class="card-text text-center">CODE:NIG5R<br>Rs.560</p>
+              <a href="./booking.html" class="btn get ">Book now!!</a><br><br>
+              <a href="cart.html" class="btn get ">Add to Bag</a>
+            </div>
+          </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-12">
+        <div class="card">
+            <img src="./n7.webp" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title text-center my-5">Pyjama Pants</h5>
+              <p class="card-text text-center">CODE:NIG6R<br>Rs.470</p>
+              <a href="./booking.html" class="btn get ">Book now!!</a><br><br>
+              <a href="cart.html" class="btn get ">Add to Bag</a>
+            </div>
+          </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-12">
+        <div class="card">
+            <img src="./n8.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title text-center my-5">Night gowns</h5>
+              <p class="card-text text-center">CODE:NIG7R<br>Rs.850</p>
+              <a href="./booking.html" class="btn get ">Book now!!</a><br><br>
+              <a href="cart.html" class="btn get ">Add to Bag</a>
+            </div>
+          </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-12">
+        <div class="card">
+            <img src="./n9.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title text-center my-5">Lounge pants</h5>
+              <p class="card-text text-center">CODE:NIG8R<br>Rs.300</p>
+              <a href="./booking.html" class="btn get ">Book now!!</a><br><br>
+              <a href="cart.html" class="btn get ">Add to Bag</a>
+            </div>
+          </div>
+      </div>
+
+    </div>
+    </div>
+  </section>
+  <div class="container-fluid">
+    <h1 class="text-center my-5" style="font-size: 50px;">Here We let you to explore our arrival from Kurtas!!!</h1>
+    <p class="text-center my-5" style="font-size: 40px; color: crimson;">Fresh as flowers,new dresses everyday...</p>
+</div>
+<!--kurta-->
+<section id="kurta">
+  <div class="container m-5">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-12">
+        <div class="card">
+            <img src="./k1.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title text-center my-5">Chiffon Kurtis</h5>
+              <p class="card-text text-center">CODE:KUR0R<br>Rs.700</p>
+              <a href="./booking.html" class="btn get ">Book now!!</a><br><br>
+              <a href="cart.html" class="btn get ">Add to Bag</a>
+            </div>
+          </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-12">
+        <div class="card">
+            <img src="./k2.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title text-center my-5">Flared Kurtis</h5>
+              <p class="card-text text-center">CODE:KUR1R<br>Rs.850</p>
+              <a href="./booking.html" class="btn get ">Book now!!</a><br><br>
+              <a href="cart.html" class="btn get ">Add to Bag</a>
+            </div>
+          </div>
+      </div>
+    
+      <div class="col-lg-4 col-md-4 col-12">
+        <div class="card">
+            <img src="./k3.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title text-center my-5">Designer Kurtis</h5>
+              <p class="card-text text-center">CODE:KUR2R<br>Rs.900</p>
+              <a href="./booking.html" class="btn get ">Book now!!</a><br><br>
+              <a href="cart.html" class="btn get ">Add to Bag</a>
+            </div>
+          </div>
+      </div>
+    <div class="col-lg-4 col-md-4 col-12">
+      <div class="card">
+          <img src="./k4.jpeg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-center my-5">Fancy Kurtis</h5>
+            <p class="card-text text-center">CODE:KUR3R<br>Rs.880</p>
+            <a href="./booking.html" class="btn get ">Book now!!</a><br><br>
+            <a href="cart.html" class="btn get ">Add to Bag</a>
+          </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-12">
+      <div class="card">
+          <img src="./k5.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-center my-5">Chikan Kurtis</h5>
+            <p class="card-text text-center">CODE:KUR4R<br>Rs.570</p>
+            <a href="./booking.html" class="btn get ">Book now!!</a><br><br>
+            <a href="cart.html" class="btn get ">Add to Bag</a>
+          </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-12">
+      <div class="card">
+          <img src="./k6.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-center my-5">Georgette Kurtis</h5>
+            <p class="card-text text-center">CODE:KUR5R<br>Rs.980</p>
+            <a href="./booking.html" class="btn get ">Book now!!</a><br><br>
+            <a href="cart.html" class="btn get ">Add to Bag</a>
+          </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-12">
+      <div class="card">
+          <img src="./k7.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-center my-5">Long Sleeve Kurtis</h5>
+            <p class="card-text text-center">CODE:KUR6R<br>Rs.860</p>
+            <a href="./booking.html" class="btn get ">Book now!!</a><br><br>
+            <a href="cart.html" class="btn get ">Add to Bag</a>
+          </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-12">
+      <div class="card">
+          <img src="./k8.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-center my-5">Indo Western Kurtis</h5>
+            <p class="card-text text-center">CODE:KUR7R<br>Rs.1200</p>
+            <a href="./booking.html" class="btn get ">Book now!!</a><br><br>
+            <a href="cart.html" class="btn get ">Add to Bag</a>
+          </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-12">
+      <div class="card">
+          <img src="./k9.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-center my-5">Anarkali Kurtis</h5>
+            <p class="card-text text-center">CODE:KUR8R<br>Rs.1290</p>
+            <a href="./booking.html" class="btn get ">Book now!!</a><br><br>
+            <a href="cart.html" class="btn get ">Add to Bag</a>
+          </div>
+        </div>
+    </div>
+
+  </div>
+  </div>
+</section>
+<div class="container-fluid">
+  <h1 class="text-center my-5" style="font-size: 50px;">Here We let you to explore our arrival from Western Wears!!!</h1>
+  <p class="text-center my-5" style="font-size: 40px; color: crimson;">Fresh as flowers,new dresses everyday...</p>
+</div>
+<!--Western-->
+<section id="west">
+  <div class="container m-5">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-12">
+        <div class="card">
+            <img src="./w1.webp" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title text-center my-5">Tube dress</h5>
+              <p class="card-text text-center">CODE:WES0R<br>Rs.890</p>
+              <a href="./booking.html" class="btn get ">Book now!!</a><br><br>
+              <a href="cart.html" class="btn get ">Add to Bag</a>
+            </div>
+          </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-12">
+        <div class="card">
+            <img src="./w2.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title text-center my-5">Blouson Dress</h5>
+              <p class="card-text text-center">CODE:WES1R<br>Rs.950</p>
+              <a href="./booking.html" class="btn get ">Book now!!</a><br><br>
+              <a href="cart.html" class="btn get ">Add to Bag</a>
+            </div>
+          </div>
+      </div>
+    
+      <div class="col-lg-4 col-md-4 col-12">
+        <div class="card">
+            <img src="./w3.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title text-center my-5">Pencil Dress</h5>
+              <p class="card-text text-center">CODE:WES2R<br>Rs.1050</p>
+              <a href="./nightwear/n1.html" class="btn get ">Book now!!</a><br><br>
+              <a href="cart.html" class="btn get ">Add to Bag</a>
+            </div>
+          </div>
+      </div>
+    <div class="col-lg-4 col-md-4 col-12">
+      <div class="card">
+          <img src="./w4.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-center my-5">Trench Dresses</h5>
+            <p class="card-text text-center">CODE:WES3R<br>Rs.760</p>
+            <a href="./nightwear/n1.html" class="btn get ">Book now!!</a><br><br>
+            <a href="cart.html" class="btn get ">Add to Bag</a>
+          </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-12">
+      <div class="card">
+          <img src="./w5.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-center my-5"> Skater Dresses</h5>
+            <p class="card-text text-center">CODE:WES4R<br>Rs.1100</p>
+            <a href="./nightwear/n1.html" class="btn get ">Book now!!</a><br><br>
+            <a href="cart.html" class="btn get ">Add to Bag</a>
+          </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-12">
+      <div class="card">
+          <img src="./w6.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-center my-5">Maxi Dresses</h5>
+            <p class="card-text text-center">CODE:WES5R<br>Rs.1450</p>
+            <a href="./nightwear/n1.html" class="btn get ">Book now!!</a><br><br>
+            <a href="cart.html" class="btn get ">Add to Bag</a>
+          </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-12">
+      <div class="card">
+          <img src="./w7.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-center my-5">Shirt Dresses</h5>
+            <p class="card-text text-center">CODE:WES6R<br>Rs.790</p>
+            <a href="./nightwear/n1.html" class="btn get ">Book now!!</a><br><br>
+            <a href="cart.html" class="btn get ">Add to Bag</a>
+          </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-12">
+      <div class="card">
+          <img src="./w8.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-center my-5">Off Shoulder Dress</h5>
+            <p class="card-text text-center">CODE:WES7R<br>Rs.0</p>
+            <a href="./nightwear/n1.html" class="btn get ">Book now!!</a><br><br>
+            <a href="cart.html" class="btn get ">Add to Bag</a>
+          </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-12">
+      <div class="card">
+          <img src="./w9.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-center my-5"> A-line Dresses</h5>
+            <p class="card-text text-center">CODE:WES8R<br>Rs.500</p>
+            <a href="./nightwear/n1.html" class="btn get ">Book now!!</a><br><br>
+            <a href="cart.html" class="btn get ">Add to Bag</a>
+          </div>
+        </div>
+    </div>
+
+  </div>
+  </div>
+</section>
+
+<div class="container-fluid">
+  <h1 class="text-center my-5" style="font-size: 50px;">Here We let you to explore our arrival from Party Wears!!!</h1>
+  <p class="text-center my-5" style="font-size: 40px; color: crimson;">Fresh as flowers,new dresses everyday...</p>
+</div>
+
+<!--Party-->
+<section id="party">
+  <div class="container m-5">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-12">
+        <div class="card">
+            <img src="./p1.webp" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title text-center my-5">Party Wear Sarees</h5>
+              <p class="card-text text-center">CODE:PAR0R<br>Rs.500</p>
+              <a href="./nightwear/n1.html" class="btn get ">Book now!!</a><br><br>
+              <a href="cart.html" class="btn get ">Add to Bag</a>
+            </div>
+          </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-12">
+        <div class="card">
+            <img src="./p2.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title text-center my-5">Lehenga</h5>
+              <p class="card-text text-center">CODE:PAR1R<br>Rs.500</p>
+              <a href="./nightwear/n1.html" class="btn get ">Book now!!</a><br><br>
+              <a href="cart.html" class="btn get ">Add to Bag</a>
+            </div>
+          </div>
+      </div>
+    
+      <div class="col-lg-4 col-md-4 col-12">
+        <div class="card">
+            <img src="./p3.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title text-center my-5">Evening Gowns</h5>
+              <p class="card-text text-center">CODE:PAR2R<br>Rs.500</p>
+              <a href="./nightwear/n1.html" class="btn get ">Book now!!</a><br><br>
+              <a href="cart.html" class="btn get ">Add to Bag</a>
+            </div>
+          </div>
+      </div>
+    <div class="col-lg-4 col-md-4 col-12">
+      <div class="card">
+          <img src="./p4.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-center my-5">Ball Gowns</h5>
+            <p class="card-text text-center">CODE:PAR3R<br>Rs.500</p>
+            <a href="./nightwear/n1.html" class="btn get ">Book now!!</a><br><br>
+            <a href="cart.html" class="btn get ">Add to Bag</a>
+          </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-12">
+      <div class="card">
+          <img src="./p5.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-center my-5">Ghagra Choli</h5>
+            <p class="card-text text-center">CODE:PAR4R<br>Rs.500</p>
+            <a href="./nightwear/n1.html" class="btn get ">Book now!!</a><br><br>
+            <a href="cart.html" class="btn get ">Add to Bag</a>
+          </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-12">
+      <div class="card">
+          <img src="./p6.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-center my-5">Crop Top Skirt</h5>
+            <p class="card-text text-center">CODE:PAR5R<br>Rs.500</p>
+            <a href="./nightwear/n1.html" class="btn get ">Book now!!</a><br><br>
+            <a href="cart.html" class="btn get ">Add to Bag</a>
+          </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-12">
+      <div class="card">
+          <img src="./p7.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-center my-5">Party Wear Suits</h5>
+            <p class="card-text text-center">CODE:PAR6R<br>Rs.500</p>
+            <a href="./nightwear/n1.html" class="btn get ">Book now!!</a><br><br>
+            <a href="cart.html" class="btn get ">Add to Bag</a>
+          </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-12">
+      <div class="card">
+          <img src="./p8.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-center my-5">Ethnic Wear</h5>
+            <p class="card-text text-center">CODE:PAR7R<br>Rs.500</p>
+            <a href="./nightwear/n1.html" class="btn get ">Book now!!</a><br><br>
+            <a href="cart.html" class="btn get ">Add to Bag</a>
+          </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-12">
+      <div class="card">
+          <img src="./p9.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-center my-5">Anarkali Lehenga</h5>
+            <p class="card-text text-center">CODE:PAR8R<br>Rs.500</p>
+            <a href="./nightwear/n1.html" class="btn get ">Book now!!</a><br><br>
+            <a href="cart.html" class="btn get ">Add to Bag</a>
+          </div>
+        </div>
+    </div>
+
+  </div>
+  </div>
+</section>
+
+</body>
+</html>
