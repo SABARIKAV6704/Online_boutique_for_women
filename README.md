@@ -13,3 +13,7 @@ Installation :
 
 
 Usage: 1.Run the website in web browser. 2.Register your account or login if you already have an account. 3.Choose your kind of dress that need to purchased , from services. 4.Choose a dress from the product and click buy now. 5.You will be redirected to a booking form , fill the form your order will be placed.
+
+
+
+install mysql2 package using the command " npm install mysql2 "
